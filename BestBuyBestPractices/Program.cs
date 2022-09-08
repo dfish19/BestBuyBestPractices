@@ -22,3 +22,5 @@ foreach (var item in c)
 {
     Console.WriteLine(item.Name);
 }
+
+//var t = new UpdateProduct();
