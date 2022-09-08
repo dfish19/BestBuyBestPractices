@@ -22,7 +22,7 @@ var c = x.GetAllDepartments();
 
 foreach (var item in c)
 {
-    Console.WriteLine(item.Name);
+    Console.WriteLine($"{item.Name} {item.DepartmentID}");
 }
 
 //var t = new UpdateProduct();
