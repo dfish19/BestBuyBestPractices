@@ -25,4 +25,13 @@ foreach (var item in c)
     Console.WriteLine($"{item.Name} {item.DepartmentID}");
 }
 
-//var t = new UpdateProduct();
+var a = new DapperProductRepository(conn);
+Console.WriteLine("Pick a product");
+var pName = Console.ReadLine();
+Console.WriteLine("Enter in the price");
+Console.WriteLine("Category");
+var category = int.Parse(Console.ReadLine());
+var price = double.Parse(Console.ReadLine());
+
+a.CreateProduct(pName,price, category);
+
